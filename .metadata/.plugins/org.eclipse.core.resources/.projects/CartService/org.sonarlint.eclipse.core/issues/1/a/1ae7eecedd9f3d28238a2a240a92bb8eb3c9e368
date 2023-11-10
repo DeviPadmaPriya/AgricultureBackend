@@ -1,0 +1,25 @@
+
+m
+java:S1128"5Remove this unused import 'com.cart.entity.CartItem'.(ßØ÷Üÿÿÿÿÿ8Ë•­Ä³1Hú_RMINORZ
+CODE_SMELL
+z
+java:S1128"GRemove this unused import 'com.cart.exception.DealerNotFoundException'.(¨ìøŠ8Ë•­Ä³1Hþ_RMINORZ
+CODE_SMELL
+c
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Ë•­Ä³1Hö_RMINORZ
+CODE_SMELL
+n	java:S125r"<This block of commented-out lines of code should be removed.(È°ûÑ8®ÚÙµ³1Hˆ)RMAJORZ
+CODE_SMELL
+~
+java:S4684%"@Replace this persistent entity with a simple POJO or DTO object.(çÄ´ýÿÿÿÿ8Í´Ò´³1H¦SRCRITICALZVULNERABILITY
+n	java:S125y"<This block of commented-out lines of code should be removed.(ÚëÀ¼8Š½‹Å³1H hRMAJORZ
+CODE_SMELL
+s	java:S125("<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8Ê‘ÌÀ³1HÄSRMAJORZ
+CODE_SMELL
+x
+java:S1128"ERemove this unused import 'com.cart.exception.CropNotFoundException'.(é÷8Ë•­Ä³1Hü_RMINORZ
+CODE_SMELL
+s	java:S125g"<This block of commented-out lines of code should be removed.(—Øíëùÿÿÿÿ8¦õÕµ³1Hå'RMAJORZ
+CODE_SMELL
+y
+java:S4684>"@Replace this persistent entity with a simple POJO or DTO object.(š·Ñç8µý„À³1HîMRCRITICALZVULNERABILITY

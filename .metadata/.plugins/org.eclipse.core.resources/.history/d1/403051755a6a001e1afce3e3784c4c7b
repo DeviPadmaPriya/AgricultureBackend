@@ -1,0 +1,30 @@
+package com.cart.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.cart.entity.Cart;
+import com.cart.entity.CartItem;
+import com.cart.repository.CartRepository;
+
+
+@Service
+public class CartServiceImpl implements ICartService{
+
+        @Autowired
+        private RestTemplate restTemplate;
+ 
+  @Autowired
+  private CartRepository cartRepo;
+  
+ 
+
+ 
+
+}
+

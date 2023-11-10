@@ -1,0 +1,50 @@
+
+c
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ˆ¢âÄ³1H¥dRMINORZ
+CODE_SMELL
+e
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ˆ¢âÄ³1H§dRMINORZ
+CODE_SMELL
+Œ
+java:S1128"TRemove this unused import 'org.springframework.web.client.HttpClientErrorException'.(ğ»òøÿÿÿÿ8ˆ¢âÄ³1H­dRMINORZ
+CODE_SMELL
+s	java:S125c"<This block of commented-out lines of code should be removed.(¶¼îùÿÿÿÿ8 ›‚¾³1H©CRMAJORZ
+CODE_SMELL
+t	java:S125İ"<This block of commented-out lines of code should be removed.(ß«¯ùıÿÿÿÿ8•âÜ³1HÛ]RMAJORZ
+CODE_SMELL
+”
+java:S1488C"aImmediately return this expression instead of assigning it to the temporary variable "savedCart".(­İëİ8„‡…À³1HÓURMINORZ
+CODE_SMELL
+n	java:S125B"<This block of commented-out lines of code should be removed.(£ší¨8ˆ¢âÄ³1H¤dRMAJORZ
+CODE_SMELL
+t	java:S125Ç"<This block of commented-out lines of code should be removed.(í×Ïúÿÿÿÿ8òà¯¹³1Hÿ6RMAJORZ
+CODE_SMELL
+_
+java:S1128"-Remove this unused import 'org.slf4j.Logger'.(íØ®68ˆ¢âÄ³1H©dRMINORZ
+CODE_SMELL
+—
+java:S1192S"\Define a constant instead of duplicating this literal "Cart not found for userid: " 3 times.(¶ÙœÙşÿÿÿÿ8“¿ïÄ³1HÇeRCRITICALZ
+CODE_SMELL
+j
+java:S1135¬"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ŒÍ»³1H¨&RINFOZ
+CODE_SMELL
+t	java:S125¸"<This block of commented-out lines of code should be removed.(ÒÌ¡úÿÿÿÿ8¾Ô–À³1Hƒ]RMAJORZ
+CODE_SMELL
+g
+java:S1128	"4Remove this unused import 'org.slf4j.LoggerFactory'.(–ÿÚŞ8ˆ¢âÄ³1H«dRMINORZ
+CODE_SMELL
+o	java:S125è"<This block of commented-out lines of code should be removed.(š‡«•8·£‘³1H©&RMAJORZ
+CODE_SMELL
+t	java:S125"<This block of commented-out lines of code should be removed.(…•·âıÿÿÿÿ8Èø×µ³1HÀ(RMAJORZ
+CODE_SMELL
+t	java:S125—"<This block of commented-out lines of code should be removed.(áã¹òùÿÿÿÿ8ğ·Î·³1Hğ=RMAJORZ
+CODE_SMELL
+o	java:S125û"<This block of commented-out lines of code should be removed.(±“¢Ä8¡Öµ³1H¶.RMAJORZ
+CODE_SMELL
+o	java:S125´"<This block of commented-out lines of code should be removed.(­‘Úº8 ›‚¾³1H¯URMAJORZ
+CODE_SMELL
+Œ
+java:S11928"QDefine a constant instead of duplicating this literal "User not found: " 3 times.(òşãìüÿÿÿÿ8“¿ïÄ³1HËeRCRITICALZ
+CODE_SMELL
+t	java:S125Î"<This block of commented-out lines of code should be removed.(ƒ®Ìãøÿÿÿÿ8Û¡¶µ³1H¨.RMAJORZ
+CODE_SMELL

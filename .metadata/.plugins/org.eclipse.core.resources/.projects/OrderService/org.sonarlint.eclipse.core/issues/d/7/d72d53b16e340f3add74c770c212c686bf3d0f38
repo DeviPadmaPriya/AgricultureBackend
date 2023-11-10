@@ -1,0 +1,20 @@
+
+z
+java:S4684("@Replace this persistent entity with a simple POJO or DTO object.(¹×ı°8Â¾¨¨º1HÿİRCRITICALZVULNERABILITY
+]
+java:S1452("&Remove usage of generic wildcard type.(¹×ı°8Â¾¨¨º1H€ŞRCRITICALZ
+CODE_SMELL
+b
+java:S1452F"&Remove usage of generic wildcard type.(ÏŒúŸıÿÿÿÿ8Â¾¨¨º1HŞRCRITICALZ
+CODE_SMELL
+t	java:S125_"<This block of commented-out lines of code should be removed.(öÛÊûÿÿÿÿ8Â¾¨¨º1H‚ŞRMAJORZ
+CODE_SMELL
+
+java:S1128"FRemove this unused import 'com.order.exception.CropNotFoundException'.(±Ò‡üúÿÿÿÿ8Â¾¨¨º1HŒŞRMINORZ
+CODE_SMELL
+
+java:S1128"FRemove this unused import 'com.order.exception.UserNotFoundException'.(‡À„úÿÿÿÿ8Â¾¨¨º1HŞRMINORZ
+CODE_SMELL
+z
+java:S1128"ARemove this unused import 'com.order.repository.OrderRepository'.(¸¤ªıÿÿÿÿ8Â¾¨¨º1HŞRMINORZ
+CODE_SMELL

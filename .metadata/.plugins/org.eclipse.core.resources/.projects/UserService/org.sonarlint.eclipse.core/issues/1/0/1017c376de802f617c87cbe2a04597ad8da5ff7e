@@ -1,0 +1,37 @@
+
+€
+java:S57382"HRemove this call to a deprecated method, it has been marked for removal.(Åúßµûÿÿÿÿ8•ÿ§’²1HÉRMAJORZ
+CODE_SMELL
+€
+java:S57383"HRemove this call to a deprecated method, it has been marked for removal.(¬œ˜¬øÿÿÿÿ8•ÿ§’²1HÈRMAJORZ
+CODE_SMELL
+
+java:S1128"LRemove this unused import 'com.user.security.service.UserDetailsServiceDTO'.(Ô´àû8‡ÔÙ½²1HÇRMINORZ
+CODE_SMELL
+•
+java:S3305 "ZInject this field value directly into "securityFilterChain", the only method that uses it.(²Ëøùÿÿÿÿ8ÿìü½²1HàRCRITICALZ
+CODE_SMELL
+‹
+java:S1128"XRemove this unused import 'org.springframework.security.web.DefaultSecurityFilterChain'.(™¦¢8‡ÔÙ½²1HÅRMINORZ
+CODE_SMELL
+{
+java:S5738."HRemove this call to a deprecated method, it has been marked for removal.(«Ÿ÷8•ÿ§’²1HÇRMAJORZ
+CODE_SMELL
+{
+java:S5738/"HRemove this call to a deprecated method, it has been marked for removal.(ÏğÅô8•ÿ§’²1HÊRMAJORZ
+CODE_SMELL
+{
+java:S57386"HRemove this call to a deprecated method, it has been marked for removal.(×íÑø8ÿìü½²1HâRMAJORZ
+CODE_SMELL
+€
+java:S57385"HRemove this call to a deprecated method, it has been marked for removal.(Åúßµûÿÿÿÿ8ÿìü½²1HãRMAJORZ
+CODE_SMELL
+{
+java:S5738."HRemove this call to a deprecated method, it has been marked for removal.(«Ÿ÷8ÿìü½²1HáRMAJORZ
+CODE_SMELL
+{
+java:S5738."HRemove this call to a deprecated method, it has been marked for removal.(«Ÿ÷8•ÿ§’²1HÍRMAJORZ
+CODE_SMELL
+€
+java:S57388"HRemove this call to a deprecated method, it has been marked for removal.(Åúßµûÿÿÿÿ8•ÿ§’²1HŞRMAJORZ
+CODE_SMELL

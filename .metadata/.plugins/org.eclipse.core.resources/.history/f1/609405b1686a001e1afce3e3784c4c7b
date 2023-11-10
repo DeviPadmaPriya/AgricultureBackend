@@ -1,0 +1,80 @@
+package com.cart.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.cart.entity.Cart;
+import com.cart.entity.CartItem;
+import com.cart.entity.User;
+import com.cart.repository.CartRepository;
+
+
+@Service
+public class CartServiceImpl implements ICartService{
+
+        @Autowired
+        private RestTemplate restTemplate;
+ 
+  @Autowired
+  private CartRepository cartRepo;
+      
+  public String addItemToCart(String userid, String cropid, int quantity) {
+	  
+	  User userResponse = restTemplate.getForObject("http://USER/user/getById/" + userid, User.class);
+
+	   
+
+	    Cart cart = cartRepo.findByUserid(userid).orElse(null);
+
+	    if (cart == null) {
+	        return "Cart Not Found";
+	    }
+      
+      CartItem crop = restTemplate.getForObject("http://CROP/crop/getById/" + cropid, CartItem.class);
+
+      if (crop == null) {
+          return "Crop Not Found";
+      }
+
+
+      CartItem cartItem = new CartItem();
+      cartItem.setCropid(crop.getCropid());
+      cartItem.setCropName(crop.getCropName());
+      cartItem.setCropType(crop.getCropType());
+      cartItem.setQuantity(quantity);
+      cartItem.setPrice(crop.getPrice());
+
+      // Add the cart item to the cart
+      cart.getCartItems().add(cartItem);
+
+      // Update the total cost of the cart
+      cart.setTotalCost(cart.getTotalCost() + (quantity * crop.getPrice()));
+
+      // Save the updated cart
+      cartRepo.save(cart);
+
+      return "Item added to the cart successfully.";
+  }
+  
+
+ 
+}
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+

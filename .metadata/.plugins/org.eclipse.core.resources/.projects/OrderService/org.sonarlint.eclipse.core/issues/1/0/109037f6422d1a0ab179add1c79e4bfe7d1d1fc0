@@ -1,0 +1,23 @@
+
+‹
+java:S1488R"^Immediately return this expression instead of assigning it to the temporary variable "orders".(”°¯˜HªŞRMINORZ
+CODE_SMELL
+r
+java:S1128"@Remove this unused import 'org.springframework.http.HttpMethod'.(Ê¨Ä¡øÿÿÿÿH­ŞRMINORZ
+CODE_SMELL
+r
+java:S1128	"@Remove this unused import 'org.springframework.http.HttpStatus'.(íŸ¤ŠúÿÿÿÿH¯ŞRMINORZ
+CODE_SMELL
+v
+java:S1128
+"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿH±ŞRMINORZ
+CODE_SMELL
+_
+java:S1128"2Remove this unused import 'com.order.entity.Crop'.(§êÅH³ŞRMINORZ
+CODE_SMELL
+x
+java:S1128"FRemove this unused import 'com.order.exception.CropNotFoundException'.(±Ò‡üúÿÿÿÿHµŞRMINORZ
+CODE_SMELL
+k
+java:S1068$"9Remove this unused "CROP_MICROSERVICE_URL" private field.(ƒß‘¸ùÿÿÿÿH·ŞRMAJORZ
+CODE_SMELL

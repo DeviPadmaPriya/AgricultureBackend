@@ -1,0 +1,24 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: APIGATEWAY
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+      - id: CROP
+        predicates:
+        - Path=/crop/**
+        uri: lb://CROP
+      - id: USERSERVICE
+        predicates:
+        - Path=/user/**
+        uri: lb://USERSERVICE
+      - id: CART
+        predicates:
+        - Path=/cart/**
+        uri: lb://CART

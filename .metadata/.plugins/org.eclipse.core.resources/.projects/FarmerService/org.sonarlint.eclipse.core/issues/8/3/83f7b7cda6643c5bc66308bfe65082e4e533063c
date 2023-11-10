@@ -1,0 +1,10 @@
+
+y
+java:S4684%"@Replace this persistent entity with a simple POJO or DTO object.(äŒè‚8Ÿû×Î±1HÖ&RCRITICALZVULNERABILITY
+n	java:S125a"<This block of commented-out lines of code should be removed.(Ž©ûÖ8ºó‚è±1HÊ&RMAJORZ
+CODE_SMELL
+‘
+java:S2293["YReplace the type specification in this constructor call with the diamond operator ("<>").(ý˜ý¥ûÿÿÿÿ8¹¦×é±1HÇ&RMINORZ
+CODE_SMELL
+~
+java:S4684 "@Replace this persistent entity with a simple POJO or DTO object.(–¥‡Æýÿÿÿÿ8ÂßûÎ±1HÉ&RCRITICALZVULNERABILITY

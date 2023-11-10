@@ -1,0 +1,18 @@
+
+n	java:S125"<This block of commented-out lines of code should be removed.(æ‹•›8ËÈé¼²1Hğ*RMAJORZ
+CODE_SMELL
+•
+java:S1128"]Remove this unused import 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder'.(åÅÚ…ûÿÿÿÿ8éÎ¼²1Hë*RMINORZ
+CODE_SMELL
+m	java:S125"<This block of commented-out lines of code should be removed.(Ç°§ıÿÿÿÿHô*RMAJORZ
+CODE_SMELL
+ˆ
+java:S1488f"\Immediately return this expression instead of assigning it to the temporary variable "user".(ŸÈ§ÿHñ*RMINORZ
+CODE_SMELL
+g	java:S125\"<This block of commented-out lines of code should be removed.(±ıºªHü*RMAJORZ
+CODE_SMELL
+m	java:S125„"<This block of commented-out lines of code should be removed.(ìÅğçıÿÿÿÿHÿ*RMAJORZ
+CODE_SMELL
+
+java:S1488n"]Immediately return this expression instead of assigning it to the temporary variable "users".(ô¬ù‘8ªÍ¼²1Hí*RMINORZ
+CODE_SMELL

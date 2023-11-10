@@ -1,0 +1,183 @@
+package com.cart.service;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.web.server.ResponseStatusException;
+
+import com.cart.entity.Cart;
+import com.cart.entity.CartItem;
+import com.cart.exception.CartNotFoundException;
+import com.cart.repository.CartRepository;
+
+
+
+@Service
+public class CartServiceImpl implements ICartService{
+
+       
+	private static final Logger log = LoggerFactory.getLogger(CartServiceImpl.class);
+  @Autowired
+  private CartRepository cartRepo;
+  
+  @Autowired
+  RestTemplate restTemplate;
+  
+  
+
+//  private List<Cart> carts = new ArrayList<>();
+     
+  private static final String CROP_MICROSERVICE_URL = "http://CROP/crop/";
+
+
+
+
+  
+  
+  
+  
+  @Override
+  public Cart addCart(Cart cart) {
+      double totalCost = calculateTotalCost(cart.getCartItems());
+
+      for (CartItem cartItem : cart.getCartItems()) {
+          if (!cropExists(cartItem.getCropName())) {
+        	  log.error("crop not in list");
+        	  throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Crop not found: " + cartItem.getCropName());          }
+      }
+
+      cart.setTotalCost(totalCost);
+      Cart savedCart = cartRepo.save(cart);
+
+      return savedCart;
+  }
+
+  private boolean cropExists(String cropName) {
+      String url = CROP_MICROSERVICE_URL + "getbyname?cropName=" + cropName;
+      ResponseEntity<List<CartItem>> response = restTemplate.exchange(url, HttpMethod.GET, null, new ParameterizedTypeReference<List<CartItem>>() {});
+      List<CartItem> crops = response.getBody();
+      return crops != null && !crops.isEmpty();
+  }
+  
+  
+
+
+private double calculateTotalCost(List<CartItem> cartItems) {
+	 double totalCost = 0.0;
+     for (CartItem item : cartItems) {
+         totalCost += item.getPrice() * item.getQuantity();
+     }
+     return totalCost;
+}
+
+
+
+@Override
+public Cart getCartById(String id) {
+	
+	
+Optional<Cart> c2=cartRepo.findById(id);
+	if(c2.isPresent()) {
+		log.info("cart is present");
+		return c2.get();
+		
+	}
+	else {
+		throw new CartNotFoundException("Cart with "+id+" not found");
+	}
+	
+	
+//	 return cartRepo.findById(id).orElseThrow(() -> new CartNotFoundException("Cart with "+id+" not found"));
+	
+	
+}
+
+
+
+@Override
+public List<Cart> getAllCarts(){
+	List<Cart> cart=cartRepo.findAll();
+	System.out.println("Getting data from"+cart);
+	return cart;
+}
+
+
+
+@Override
+public Cart updateCart(Cart cart) {
+	 String url = CROP_MICROSERVICE_URL + "cart/update";
+     restTemplate.put(url, cart);
+     return cart;
+}
+
+
+@Override
+public String deleteCart(String id) {
+	Optional<Cart> cart = cartRepo.findById(id);
+	if(cart.isPresent()) {
+		cartRepo.deleteById(id);
+		return "cart deleted";
+	}
+	
+	return "cart not found";
+}
+      
+ 
+
+@Override
+public double cartTotal(Cart cart) {
+	// TODO Auto-generated method stub
+	return 0;
+}
+ 
+}
+
+
+
+
+
+
+
+ 
+
+//@Override
+//public Cart addCart(Cart cart) { 
+//	 double totalCost = calculateTotalCost(cart.getCartItems());
+//	    cart.setTotalCost(totalCost);
+//	    Cart savedCart = cartRepo.save(cart);
+//
+//	    return savedCart; 
+//}
+ 
+
+
+//@Override
+//public Cart getCartById(String cartid) {
+//	Cart cart1 = cartRepo.findByCartid(cartid);
+//
+//  if (cart1 != null) {
+//      return cart1;
+//  }
+//
+//  String url = CROP_MICROSERVICE_URL + "/cart/" + cartid;
+//  ResponseEntity<Cart> response = restTemplate.getForEntity(url, Cart.class);
+//  Cart cart2 = response.getBody();
+//
+//  if (cart2 != null) {
+//      cartRepo.save(cart2);
+//  }
+//
+//  return cart2;
+//}
